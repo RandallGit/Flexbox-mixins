@@ -1,0 +1,52 @@
+/*-----------------------------------------------------
+ 
+ *********** FLEXBOX LESS MIXINS *************
+ 
+ Author: Randall Elliott    Version: 2.0     07/01/2014
+ 
+ **                 WARNING                          **
+ THIS VERSION IS TO BE USED WITH AN AUTOPREFIXER SUCH 
+ AS THE ONE INCLUDED IN THE LATEST CODEKIT.
+ 
+ READ MORE ABOUT AUTOPREFIXERS:
+ http://css-tricks.com/autoprefixer/
+ 
+ CODEKIT: 
+ https://incident57.com/codekit/help.html#autoprefixer
+ 
+------------------------------------------------------*/
+
+.flex {
+  display: flex;
+}
+
+.cols {
+      flex-direction: column;
+}
+.rows {
+      flex-direction: row;
+}
+.initial {
+      flex: initial;
+}
+.none {
+      flex: none;
+}
+.grow(@num) {
+      flex: @num;
+}
+.start {
+	justify-content: start;
+}
+.end {
+	justify-content: end;
+}
+.justify {
+	justify-content: justify;
+}
+.center {
+	justify-content: center;
+}
+.align-center {
+	align-items: center;
+}

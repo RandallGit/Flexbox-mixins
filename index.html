@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="apple-touch-icon" href="touch-icon-iphone.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="touch-icon-ipad.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="touch-icon-iphone4.png" />
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,700' rel='stylesheet' type='text/css'>
+    <link href='css/style.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+	<div id="wrapper">
+		<h1>FLEXBOX LESS MIXINS</h1>
+		<section>
+			<h2>Just flex. No floats, inline-box or other layout hacks here.</h2>
+		    <ul>
+		        <li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+		    </ul>
+		</section>
+		<section>
+			<h2>Fill the space evenly.</h2>
+		    <ul class="grow-one">
+		        <li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+		    </ul>
+		</section>
+		<section>
+			<h2>Make them into columns instead of rows.</h2>
+		    <ul class="grow-one columns">
+		        <li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+		    </ul>
+		</section>
+		<section>
+			<h2>Fill the space with the first expanding one part, the second three and the third by two.</h2>
+		    <ul class="grow-one">
+		        <li>Item 1</li>
+				<li class="grow-three">Item 2</li>
+				<li class="grow-two">Item 3</li>
+		    </ul>
+		</section>
+		<section>
+			<h2>Align content to the vertical center.</h2>
+		    <ul class="vertically-centered">
+		        <li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+		    </ul>
+		</section>
+		<section>
+			<h2>Align content to the horizontal center.</h2>
+		    <ul class="horizontally-centered">
+		        <li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+		    </ul>
+		</section>
+		<section>
+			<h2>Align content to both centers.</h2>
+		    <ul class="vertically-centered horizontally-centered">
+		        <li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+		    </ul>
+		</section>
+		<section>
+			<h2>Change the item order without touching the mark-up.</h2>
+		    <ul class="horizontally-centered change-order">
+		        <li>Item 1</li>
+				<li>Item 2</li>
+				<li>Item 3</li>
+		    </ul>
+		</section>
+	</div>
+</body>
+</html>
