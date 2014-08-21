@@ -63,10 +63,17 @@
 }
 .end {
   -webkit-box-pack: end;
-  -webkit-justify-content: end;
+  -webkit-justify-content: flex-end;
   -moz-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: end;
+  justify-content: flex-end;
+}
+.between {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .justify {
   -webkit-box-pack: justify;
@@ -191,4 +198,18 @@ ul.change-order li:nth-child(3) {
   -moz-box-ordinal-group: 3;
   -ms-flex-order: 2;
   order: 2;
+}
+ul.flex-end {
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+ul.even-space {
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
