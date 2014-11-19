@@ -1,0 +1,79 @@
+// EXAMPLE STYLE USAGE FOR FLEXBOX LESS //
+@import 'flexbox.less';
+
+body {
+	font-family: 'Exo 2', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	font-weight: normal;
+	font-size: 1.25rem;
+	margin: 0;
+	padding: 0;
+	padding-bottom: 0.375rem;
+}
+#wrapper {
+	width: 80%;
+	margin: auto;
+	padding-bottom: 4rem;
+}
+
+section {
+	padding-top: 1em;
+	
+	ul {
+		.flex();
+		background-color: #006bb6;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		height: 6rem;
+		
+		li {
+			background-color: #83b5dd;
+			margin: 1em;
+			padding: 1em;
+		}
+	}
+}
+ul.columns {
+	.cols();
+	height: auto;
+}
+ul.grow-one {
+	
+	li {
+	.grow(1);
+	}
+	li.grow-two {
+		.grow(2);
+	}
+	li.grow-three {
+		.grow(3);
+	}
+}
+.vertically-centered {
+	.align-center();
+}
+.horizontally-centered {
+	.center();
+}
+ul.change-order {
+	
+	li:nth-child(1) {
+		order: 3;
+	}
+	li:nth-child(2) {
+		order: 1;
+	}
+	li:nth-child(3) {
+		order: 2;
+	}
+}
+ul.flex-end {
+	.end();
+}
+ul.even-space {
+	.between();
+}
